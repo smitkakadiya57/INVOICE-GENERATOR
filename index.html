@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Uchen&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="modal-wrapper">
+        <div class="modal-container">
+            <button class="close">&times;</button>
+            <h2 class="modal-title"> User Instructions</h2>
+            <hr>
+            <p class="modal-content">
+                <p> Heyy ........</p>
+                <p> This is Online Invoice Generator for Malls,Shops and etc.</p>
+                <br>
+                <p> Steps to use :</p>
+                <p> Step 1: fil coustomer Details. </p>
+                <p> Step 2: fil Product Details using Product Code </p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Product Code</td>
+                            <td>Product Name</td>
+                        </tr>
+                        <tr>
+                            <td>DM1</td>
+                            <td>Cold Drink</td>
+                        </tr>
+                        <tr>
+                            <td>DM2</td>
+                            <td>Chips</td>
+                        </tr>
+                        <tr>
+                            <td>DM3</td>
+                            <td>Chocolate</td>
+                        </tr>
+                        <tr>
+                            <td>DM4</td>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>DM5</td>
+                            <td>File</td>
+                        </tr>
+                        <tr>
+                            <td>DM6</td>
+                            <td>Pen</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p> Step 3: set Discount and Tax value and Hit the Calculate </p>
+                <br>
+                <p>Thank you so much...........</p>
+            </p>
+            
+        </div>
+    </div>
+    <div class="header ">
+        <div class="container d-flex-start">
+            <img src="img/logo.png" alt="Bill calculator">
+            <span>Invoice Generator</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="customer_details sub_details">
+                <p class="subtitle">Customer Details</p>
+                <hr><br>
+               
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="c_name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="c_email">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="c_phone">
+                </div>
+                <div class="field">
+                    <label for="c_adress">Adress</label>
+                    <textarea name="" id="c_adress" cols="30" rows="5"></textarea>
+                </div>
+
+            </div>
+            <div class="product_details sub_details">
+                <p class="subtitle">Product Details</p>
+                <hr><br>
+                <div class="products">
+                    <div id="product_name">
+
+                    </div>
+                    <div id="product_price">
+
+                    </div>
+                    <div id="product_qty">
+
+                    </div>
+                </div>
+                <br>
+                <a class="option-btn" id="add">Add</a>
+                <a class="option-btn" id="remove">Remove</a>
+                <a class="option-btn" id="update" onclick="update_func()" >Update</a>
+            </div>
+            <div class="other_details sub_details">
+                <p class="subtitle"> Other Details</p>
+                <hr><br>
+                <div class="field">
+                    <label for="disc">Discount (%)</label>
+                    <input type="number" id="disc" value="5">
+                </div>
+                <div class="field">
+                    <label for="gst">GST(%)</label>
+                    <input type="number" id="gst" value="18">
+                </div>
+
+                
+            </div>
+
+            <button id="calculate" class="option-btn" onclick="calculate_bill(); mybill() ">  Calculate</button>
+
+            <div id="final_bill">
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="try.js"></script>
+    <script src="modal.js"></script>
+
+</body>
+
+</html>

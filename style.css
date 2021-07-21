@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Faustina', serif;
+   
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.d-flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.header{
+    /* border: 2px solid red; */
+   background-image: linear-gradient(rgb(248, 208, 27),rgb(238, 228, 139));
+    box-shadow: 0px 0px 4px  black;
+    margin-bottom: 1rem;
+}
+.header img {
+    height: 4rem;
+    margin: 0.5rem;
+}
+.header span{
+    font-size: 3rem;
+    margin: 0.5rem;
+    font-family: 'Uchen', serif;
+}
+.main {
+    margin-bottom: 5rem;
+}
+.sub_details{
+    /* border: 0.1rem solid rgb(228, 181, 29); */
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0rem 0.1rem 0.3rem rgb(131, 125, 125);
+    margin:5%;
+}
+
+.subtitle {
+    font-size: 2rem;
+   
+    
+}
+
+.field{
+    display: flex;
+    align-items: center;
+}
+.field label{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.field input {
+    width: 60%;
+    height: 2rem;
+    outline: none;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    font-size: 1.1rem;
+   
+}
+
+.field textarea{
+    width: 60%;
+    height: 4rem;
+    outline: none;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    font-size: 1.1rem;
+    resize: none;
+}
+
+.option-btn{
+    /* border: 0.1rem solid rgb(23, 93, 5); */
+    background: green;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size:1.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.2rem rgb(3, 3, 3);
+   
+   
+}
+#remove{
+    background: rgb(243, 83, 9);
+}
+#update{
+    background: rgb(243, 156, 16);
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+width: 100%;
+/* border:  2px solid red; */
+margin: auto;
+    
+}
+#product_name  , #product_price  , #product_qty {
+    width: auto;
+    margin: 0.5rem;
+}
+#product_name input , #product_price input  , #product_qty input {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    font-size: 1.1rem;
+}
+#product_price {
+    display: none;
+}
+#disc, #gst {
+   
+    max-width: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+  }
+@media screen and (max-width: 520px) {
+    html {
+      font-size: 10px;
+    }
+  }

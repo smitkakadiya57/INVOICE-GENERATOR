@@ -1,0 +1,42 @@
+#final_bill {
+  
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.1rem 0.3rem rgb(131, 125, 125);
+    background: rgb(246, 246, 246);
+}
+#final_bill .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#final_bill .title img  {
+height: 5rem;
+}
+#final_bill .title span {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+#final_bill p {
+    margin: 0.3rem;
+    font-size: 1rem;
+}
+#final_bill h2 {
+    margin: 0.3rem;
+    font-size: 1rem;
+}
+
+#final_bill .bill_table{
+    
+    display: flex;
+    
+
+}
+#final_bill .bill_table p {
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
